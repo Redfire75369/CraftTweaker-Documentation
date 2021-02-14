@@ -11,7 +11,7 @@ It might be required for you to import the package if you encounter any issues (
 
 ## Overview
 
-| Binary Operators                  | `+` | `-` | `*` | `/` | `%` | `&` | `|` | `^` | `in` | `==` | `<, >, <=, >=` |
+| Binary Operators                  | `+` | `-` | `*` | `/` | `%` | `&` | <code>&#124;</code> | `^` | `in` | `==` | `<, >, <=, >=` |
 |-----------------------------------|-----|-----|-----|-----|-----|-----|-----|-----|------|------|----------------|
 | DataBool                          | ✘  | ✘  | ✘   | ✘  | ✘  | ✔   | ✔  | ✔  | ✔    | ✔   | ✘             |
 | DataByte                          | ✔  | ✔  | ✔   | ✔  | ✔  | ✔   | ✔  | ✔  | ✔    | ✔   | ✔             |
@@ -65,14 +65,14 @@ You can also use the IData Interface to convert types: `("1" as IData).asInt();`
 | Casts from ↓ to →                     | bool | byte | byte[] | double | float | int | int[]  | list     | long | [Map](/AdvancedFunctions/Associative_Arrays/)                 | short | string |
 |---------------------------------------|------|------|--------|--------|-------|-----|--------|----------|------|---------------------------------------------------------------|-------|--------|
 | DataBool                              | `≡`  | ✔    | `null` | ✔      | ✔   | ✔   | `null` | `null`  | ✔    | `null`                                                       | ✔     | ✔     |
-| DataByte                              | ✘    | `≡`  | `null` | ✔      | ✔   | ✔   | `null` | `null`  | ✔    | `null`                                                       | ✔     | ✔     |
+| DataByte                              | ✔    | `≡`  | `null` | ✔      | ✔   | ✔   | `null` | `null`  | ✔    | `null`                                                       | ✔     | ✔     |
 | DataByte[]                            | ✘    | ✘    | `≡`    | ✘      | ✘  | ✘   | ✔      | ✔      | ✘    | `null`                                                       | ✘     | ✔     |
-| DataDouble                            | ✘    | ✔    | `null` | `≡`    | ✔   | ✔   | `null` | `null`  | ✔    | `null`                                                       | ✔     | ✔     |
-| DataFloat                             | ✘    | ✔    | `null` | ✔      | `≡` | ✔   | `null` | `null`  | ✔    | `null`                                                       | ✔     | ✔     |
-| DataInt                               | ✘    | ✔    | `null` | ✔      | ✔  | `≡`  | `null` | `null`  | ✔    | `null`                                                       | ✔     | ✔     |
+| DataDouble                            | ✔    | ✔    | `null` | `≡`    | ✔   | ✔   | `null` | `null`  | ✔    | `null`                                                       | ✔     | ✔     |
+| DataFloat                             | ✔    | ✔    | `null` | ✔      | `≡` | ✔   | `null` | `null`  | ✔    | `null`                                                       | ✔     | ✔     |
+| DataInt                               | ✔    | ✔    | `null` | ✔      | ✔  | `≡`  | `null` | `null`  | ✔    | `null`                                                       | ✔     | ✔     |
 | DataInt[]                             | ✘    | ✘    | ✔      | ✘      | ✘  | ✘   | `≡`    | ✔      | ✘    | `null`                                                       | ✘     | ✔     |
 | DataList                              | ✘    | ✘    | ✔      | ✘      | ✘  | ✘   | ✔      | `≡`    | ✘    | `null`                                                       | ✘     | ✔     |
-| DataLong                              | ✘    | ✔    | `null` | ✔      | ✔   | ✔   | `null` | `null` | `≡`   | `null`                                                       | ✔     | ✔     |
+| DataLong                              | ✔    | ✔    | `null` | ✔      | ✔   | ✔   | `null` | `null` | `≡`   | `null`                                                       | ✔     | ✔     |
 | [DataMap](/Vanilla/Data/DataMap/)     | ✘    | ✘    | `null` | ✘      | ✘   | ✘   | `null` | `null` | ✘    | `≡`                                                          | ✘     | ✔     |
-| DataShort                             | ✘    | ✔    | `null` | ✔      | ✔   | ✔   | `null` | `null` | ✔    | `null`                                                       | `≡`   | ✔      |
+| DataShort                             | ✔    | ✔    | `null` | ✔      | ✔   | ✔   | `null` | `null` | ✔    | `null`                                                       | `≡`   | ✔      |
 | DataString                            | ✘    | ✔    | `null` | ✔      | ✔   | ✔   | `null` | `null` | ✔    | `null`                                                       | ✔     | `≡`    |
